@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu Example</title>
+  <style>
+
+
+
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+    }
+
+    /* Navbar base */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #b26d44; /* brownish color */
+      padding: 15px 0;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: black;
+      font-size: 28px;
+      position: relative;
+    }
+
+    /* Dropdown container */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #d28c5d;
+      min-width: 180px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 4px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: black;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #c07b4d;
+    }
+
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Optional hover color for the main button */
+    .dropdown:hover > a {
+      color: purple;
+    }
+
+    /* Optional hover color for normal links */
+    .navbar > a:hover {
+      color: purple;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="css.html" class="tab-active" id="tab-home">Home</a>
+    <a href="#">Contactez Nous</a>
+
+    <div class="dropdown">
+      <a href="#">Tables ▼</a>
+      <div class="dropdown-content">
+        <a href="dining-tables.html" class="tab" id="tab-diningtables">Dining Tables</a>
+        <a href="#">Coffee Tables</a>
+        <a href="#">Side Tables</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">Cabinets ▼</a>
+      <div class="dropdown-content">
+        <a href="#">Kitchen Cabinets</a>
+        <a href="#">Bathroom Cabinets</a>
+        <a href="#">Storage Units</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">Chaises ▼</a>
+      <div class="dropdown-content">
+        <a href="#">Office Chairs</a>
+        <a href="#">Dining Chairs</a>
+        <a href="#">Lounge Chairs</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">Decorations ▼</a>
+      <div class="dropdown-content">
+        <a href="#">Wall Art</a>
+        <a href="#">Vases</a>
+        <a href="#">Lighting</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
